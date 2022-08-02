@@ -1,0 +1,123 @@
+body {
+    background: url("img/pexels-brandon-montrone-1179229.jpg") no-repeat center fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    margin: 100px auto 0;
+    width: 340px;
+}
+
+.card {
+    overflow: hidden;
+    background-color: #fff;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+
+.steps {
+    padding: 11x 0;
+    text-align: center;
+}
+
+.steps--item {
+    display: inline-block;
+    margin: 0 2px;
+    width: 6px;
+    height: 6px;
+    background-color: #dedede;
+    border-radius: 50%;
+}
+
+.steps--item.active {
+    background-color: #aaa;
+}
+
+.checkout-title {
+    margin-top: 5px;
+    margin-bottom: 27px;
+    font-size: 21px;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.card-options--item {
+    position: relative;
+    display: block;
+    padding: 19px 20px 19px 94px;
+    border-top: 1px solid #e8e8e8;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 30px;
+    block-size: 40px;
+    color: #b6b6b6;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.card-options--item:hover {
+    background-color: #efefef;
+}
+
+.card-options--item.visa {
+    background-image: url("img/visa.png");
+    background-size:20px;
+}
+
+.card-options--item.mastercard {
+    background-image: url("img/mastercard.jpg");
+    background-size:20px;
+}
+
+.card-options--item.maestro {
+    background-image: url("img/maestro.png");
+    background-size:20px;
+}
+
+
+.card-options--item.active {
+    color: #222;
+}
+
+.card-options--item:active:after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    right: 15px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(img/check.png) no-repeat center;
+    background-size: contain;
+}
+
+.button--next {
+    display: block;
+    padding: 18px 0 15px;
+    background: #598BDD;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all 0.1s ease;
+}
+
+.button--next:hover {
+    background: #5c95f1;
+}
+
+.button--next:active {
+    transform: translateY(3px);
+}
+
+.button--next img {
+    display: inline-block;
+    width: 15px;
+    margin-left: 1px;
+    vertical-align: middle;
+}
